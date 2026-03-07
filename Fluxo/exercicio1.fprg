@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio1"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-07 10:56:15 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMDoyOTo1NSAiOzIyMTE="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMDo1NjoxNSAiOzE7MjMxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="listaNumero" type="Integer" array="True" size="4"/>
+            <declare name="media, i, nota" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="&quot;Digite um numero:&quot;" newline="True"/>
+                <input variable="nota"/>
+                <assign variable="listaNumero[i]" expression="nota"/>
+            </for>
+            <assign variable="media" expression="(listaNumero[0] + listaNumero[1] * 2 + listaNumero[2] * 3 + listaNumero[3] * 4) / 10"/>
+            <output expression="&quot;A m&#233;dia &#233;: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

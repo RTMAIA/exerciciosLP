@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio5"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-07 11:27:29 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMToyMTowOCAiOzIyMDI="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMToyNzoyOSAiOzE7MjMxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="primeiroTermo, q, quintoTermo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primero termo: &quot;" newline="True"/>
+            <input variable="primeiroTermo"/>
+            <output expression="&quot;Digite a raz&#227;o(q): &quot;" newline="True"/>
+            <input variable="q"/>
+            <assign variable="quintoTermo" expression="primeiroTermo * (q ^ (5-1))"/>
+            <output expression="&quot;O valor do qinto termo &#233;: &quot; &amp; quintoTermo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

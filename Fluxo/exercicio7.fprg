@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercici"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-07 02:42:12 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMTozMjo0MyAiOzIyMDM="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIwMjo0MjoxMiAiOzM7MjMxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hora" type="String" array="False" size=""/>
+            <declare name="minutos" type="Integer" array="False" size=""/>
+            <declare name="caracteres" type="String" array="True" size="2"/>
+            <output expression="&quot;Digite uma hora no formato (xx:xx): &quot;" newline="True"/>
+            <input variable="hora"/>
+            <call expression="Split(hora, &quot;:&quot;, caracteres)"/>
+            <assign variable="minutos" expression="(toInteger(caracteres[0]) * 60) + (toInteger(caracteres[1]))"/>
+            <output expression="&quot;Se passaram &quot; &amp; minutos &amp; &quot; minutos desde o inicio do dia.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="Split" type="None" variable="resultado">
+        <parameters>
+            <parameter name="letra" type="String" array="False"/>
+            <parameter name="pontoDeCorte" type="String" array="False"/>
+            <parameter name="lista" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="hora, minutos" type="String" array="False" size=""/>
+            <declare name="tamanho, i, resultado" type="Integer" array="False" size=""/>
+            <assign variable="tamanho" expression="Len(letra)"/>
+            <assign variable="resultado" expression="1"/>
+            <assign variable="hora" expression="&quot;&quot;"/>
+            <assign variable="minutos" expression="&quot;&quot;"/>
+            <for variable="i" start="0" end="tamanho-1" direction="inc" step="1">
+                <if expression="Char(letra, i)!= pontoDeCorte">
+                    <then>
+                        <if expression="Char(letra, i)== &quot;1&quot; || Char(letra, i) == &quot;3&quot;">
+                            <then>
+                                <assign variable="hora" expression="hora &amp; Char(letra, i)"/>
+                            </then>
+                            <else>
+                                <assign variable="minutos" expression="minutos &amp; Char(letra, i)"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="lista[0]" expression="hora"/>
+            <assign variable="lista[1]" expression="minutos"/>
+        </body>
+    </function>
+</flowgorithm>

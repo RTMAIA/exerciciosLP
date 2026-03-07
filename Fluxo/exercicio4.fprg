@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio4"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-07 11:21:06 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMToxNzowOCAiOzIyMDc="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMToyMTowNiAiOzE7MjMwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, primeiroTermo, decimoTermo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor da raz&#227;o(r): &quot;" newline="True"/>
+            <input variable="r"/>
+            <output expression="&quot;Digite o valor do primeiro termo: &quot;" newline="True"/>
+            <input variable="primeiroTermo"/>
+            <assign variable="decimoTermo" expression="primeiroTermo + (10-1) * r"/>
+            <output expression="&quot;O d&#233;cimo termo &#233;: &quot; &amp; decimoTermo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

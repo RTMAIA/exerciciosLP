@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio6"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-07 11:32:39 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMToyNzozMSAiOzIyMDQ="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMTozMjozOSAiOzE7MjMxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorHoraAula, percentualINSS, salario" type="Real" array="False" size=""/>
+            <declare name="numeroDeAula" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor da hora aula: &quot;" newline="True"/>
+            <input variable="valorHoraAula"/>
+            <output expression="&quot;Digite o n&#250;mero de aulas: &quot;" newline="True"/>
+            <input variable="numeroDeAula"/>
+            <output expression="&quot;Digite o percentual do INSS: &quot;" newline="True"/>
+            <input variable="percentualINSS"/>
+            <assign variable="percentualINSS" expression="percentualINSS  / 100"/>
+            <assign variable="salario" expression="numeroDeAula * valorHoraAula"/>
+            <assign variable="salario" expression="salario - (salario * percentualINSS)"/>
+            <output expression="&quot;O seu salario &#233;: &quot; &amp; salario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

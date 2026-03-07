@@ -19,24 +19,20 @@ public class Exercicios {
 
     public void inverterNumero() {
         Scanner teclado = new Scanner(System.in);
-        int valor;
-        char c, d, u;
-        String valor_string;
-        int valor_invertido;
+        int valor, valorInvertido;
+        String valorString;
 
-        System.out.println("Digite um número:");
+        System.out.println("Digite um número (CDU - 000):");
         valor = teclado.nextInt();
-        valor_string = String.valueOf(valor);
-        valor_invertido =  Integer.parseInt(Character.toString(valor_string.charAt(2)) + Character.toString(valor_string.charAt(1)) + Character.toString(valor_string.charAt(0)));
+        valorString = String.valueOf(valor);
+        valorInvertido =  Integer.parseInt(Character.toString(valorString.charAt(2)) + Character.toString(valorString.charAt(1)) + Character.toString(valorString.charAt(0)));
 
-        System.out.println(String.format("Valor invertido: %s", valor_invertido));
+        System.out.println(String.format("Valor invertido: %s", valorInvertido));
     }
 
     public void calcularAreaLosango() {
         Scanner teclado = new Scanner(System.in);
-        int diagonalMaior;
-        int diagonalMenor;
-        int areaDoLosango;
+        int diagonalMaior, diagonalMenor, areaDoLosango;
 
         System.out.println("Digite um valor para a diagonal maior:");
         diagonalMaior = teclado.nextInt();
@@ -49,11 +45,10 @@ public class Exercicios {
 
     public void calcularProgressaoAritmetica() {
         // formula = a = a + (n -1) * r
-        int r, primeiroTermo;
-        int decimoTermo;
+        int r, primeiroTermo, decimoTermo;
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Digite o valor de razão(r): ");
+        System.out.println("Digite o valor da razão(r): ");
         r = teclado.nextInt();
         System.out.println("Digite o valor do primeiro termo: ");
         primeiroTermo = teclado.nextInt();
@@ -67,9 +62,7 @@ public class Exercicios {
 
     public  void calcularProgressaoGeometrica() {
         // formula = a= a.q**n-1
-        int primeiroTermo;
-        int q;
-        int quintoTermo;
+        int primeiroTermo, q, quintoTermo;
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Digite o primeiro termo: ");
@@ -84,10 +77,8 @@ public class Exercicios {
     }
 
     public void calcularSalario() {
-        double valorHoraAula;
+        double valorHoraAula, percentualDescontoINSS, salario;
         int numeroDeAula;
-        double percentualDescontoINSS;
-        double salario;
 
         Scanner teclado = new Scanner(System.in);
 
@@ -115,7 +106,6 @@ public class Exercicios {
         String[] letras;
 
         Scanner teclado = new Scanner(System.in);
-
 
         System.out.println("Digite uma hora no formato (xx:xx): ");
         hora = teclado.next();
