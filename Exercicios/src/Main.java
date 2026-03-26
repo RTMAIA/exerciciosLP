@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
         Exercicios exercicios = new Exercicios();
 
-        exercicios.mediaPonderada();
+        //exercicios.mediaPonderada();
         exercicios.inverterNumero();
-        exercicios.calcularAreaLosango();
-        exercicios.calcularProgressaoAritmetica();
-        exercicios.calcularProgressaoGeometrica();
-        exercicios.calcularSalario();
-        exercicios.calcularMinutos();
+        //exercicios.calcularAreaLosango();
+        //exercicios.calcularProgressaoAritmetica();
+        //exercicios.calcularProgressaoGeometrica();
+        //exercicios.calcularSalario();
+        //exercicios.calcularMinutos();
     }
 }

@@ -19,15 +19,15 @@ public class Exercicios {
 
     public void inverterNumero() {
         Scanner teclado = new Scanner(System.in);
-        int valor, valorInvertido;
-        String valorString;
+        int valor, c,  d, u;
 
         System.out.println("Digite um número (CDU - 000):");
         valor = teclado.nextInt();
-        valorString = String.valueOf(valor);
-        valorInvertido =  Integer.parseInt(Character.toString(valorString.charAt(2)) + Character.toString(valorString.charAt(1)) + Character.toString(valorString.charAt(0)));
+        c = valor / 100;
+        d = (valor / 10) % 10;
+        u = valor % 10;
 
-        System.out.println(String.format("Valor invertido: %s", valorInvertido));
+        System.out.println(String.format("Valor invertido: %d%d%d", u, d, c));
     }
 
     public void calcularAreaLosango() {

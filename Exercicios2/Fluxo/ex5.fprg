@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex5"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-22 07:41:43 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNzoyMjoyMSAiOzIyMDA="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNzo0MTo0MyAiOzE7MjMxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, unidade, dezena, centena" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor: &quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="unidade" expression="valor /100"/>
+            <assign variable="dezena" expression="(valor / 10) % 10"/>
+            <assign variable="centena" expression="valor % 10"/>
+            <if expression="Len(ToString(valor)) == 3">
+                <then>
+                    <if expression="unidade == dezena and dezena == centena">
+                        <then>
+                            <output expression="&quot;&#8212; Equil&#225;tero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="unidade == dezena and dezena != centena or &#13;&#10;unidade != dezena and dezena == centena or&#13;&#10;unidade == centena and centena != dezena">
+                                <then>
+                                    <output expression="&quot;&#8212; Is&#243;sceles&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;&#8212; Escaleno&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;&#8212; Entrada Inv&#225;lida.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

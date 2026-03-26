@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio2"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-07 04:54:18 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMDo1NjoxOCAiOzIyMTA="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIwNDo1NDoxOCAiOzI7MjMyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, c, d, u" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero (CDU - 000):&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="c" expression="valor / 100"/>
+            <assign variable="d" expression="(valor / 10) % 10"/>
+            <assign variable="u" expression="valor % 10"/>
+            <output expression="&quot;Valor invertido &#233; &quot; &amp;u&amp;d&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

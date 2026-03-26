@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex4"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-22 07:22:20 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNzoxMzowMyAiOzIyMDA="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNzoyMjoyMCAiOzE7MjMwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a idade (anos): &quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade &gt;= 60">
+                <then>
+                    <output expression="&quot;&#8212; Idoso&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade &gt;= 18 and idade &lt;=59">
+                        <then>
+                            <output expression="&quot;&#8212; Adulto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="idade &gt;= 12 and idade &lt;= 17">
+                                <then>
+                                    <output expression="&quot;&#8212; Adolescente&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="idade &lt;= 11 and idade &gt; 0">
+                                        <then>
+                                            <output expression="&quot;&#8212; Crian&#231;a&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;&#8212; Idade Inv&#225;lida&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

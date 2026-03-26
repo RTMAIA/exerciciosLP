@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex3"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-22 07:13:01 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNzowMjoyMSAiOzIxOTg="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNzoxMzowMSAiOzI7MjMwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero inteiro: &quot;" newline="True"/>
+            <input variable="valor"/>
+            <if expression="valor % 2 == 1">
+                <then>
+                    <output expression="&quot;O numero &lt;&quot; &amp; a &amp; &quot;&gt; &#233; impar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O numero &lt;&quot; &amp; a &amp; &quot;&gt; &#233; par&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

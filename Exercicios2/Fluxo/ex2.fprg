@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex2"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-22 07:02:14 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNjo1MjoyNiAiOzIyMDc="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNzowMjoxNCAiOzE7MjMwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, maiorValor, menorValor" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero inteiro: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite um numero inteiro: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Digite um numero inteiro: &quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="maiorValor" expression="a"/>
+            <assign variable="menorValor" expression="a"/>
+            <if expression="b &gt; maiorValor">
+                <then>
+                    <assign variable="maiorValor" expression="b"/>
+                </then>
+                <else>
+                    <assign variable="menorValor" expression="b"/>
+                </else>
+            </if>
+            <if expression="c &gt; maiorValor">
+                <then>
+                    <assign variable="maiorValor" expression="c"/>
+                </then>
+                <else>
+                    <if expression="c &lt; menorValor">
+                        <then>
+                            <assign variable="menorValor" expression="c"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Maior numero: &quot; &amp; maiorValor" newline="True"/>
+            <output expression="&quot;Menor numero: &quot; &amp; menorValor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

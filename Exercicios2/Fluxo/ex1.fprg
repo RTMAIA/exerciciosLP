@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex1"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-23 09:41:33 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIyOyIwNjo0MzoxOCAiOzIyMDg="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTIzOyIwOTo0MTozMyAiOzI7MjMxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="entrada" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero inteiro.&quot;" newline="True"/>
+            <input variable="entrada"/>
+            <if expression="entrada == 0">
+                <then>
+                    <output expression="&quot;O numero &lt;&quot; &amp;entrada&amp; &quot;&gt; &#233; NEUTRO.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="entrada &gt; 0">
+                        <then>
+                            <output expression="&quot;O numero &lt;&quot; &amp;entrada&amp; &quot;&gt; &#233; POSITIVO.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O numero &lt;&quot; &amp;entrada&amp; &quot;&gt; &#233; NEGATIVO.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
