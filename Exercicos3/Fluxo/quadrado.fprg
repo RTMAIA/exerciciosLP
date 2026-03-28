@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="quadrado"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-28 01:22:32 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTI4OyIwMToxMjoyOSAiOzIyMDc="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTI4OyIwMToyMjozMiAiOzE7MjMxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="entrada, i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um valor inteiro: &quot;" newline="False"/>
+            <input variable="entrada"/>
+            <for variable="j" start="1" end="entrada" direction="inc" step="1">
+                <for variable="i" start="1" end="entrada" direction="inc" step="1">
+                    <output expression="&quot;*  &quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

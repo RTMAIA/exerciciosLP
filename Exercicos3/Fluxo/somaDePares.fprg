@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="somaDePares"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-28 01:12:27 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTI3OyIxMDo0MjowNSAiOzIyMDM="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTI4OyIwMToxMjoyNyAiOzE7MjMxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="entradaUm, entradaDois, total" type="Integer" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <output expression="&quot;Digite dois valores inteiros: &quot;" newline="False"/>
+            <input variable="entradaUm"/>
+            <input variable="entradaDois"/>
+            <if expression="entradaUm &lt; entradaDois">
+                <then>
+                    <output expression="&quot;Somando valores pares: &quot;" newline="False"/>
+                    <for variable="entradaUm" start="entradaUm + 1" end="entradaDois - 1" direction="inc" step="1">
+                        <if expression="entradaUm % 2 == 0">
+                            <then>
+                                <output expression="entradaUm" newline="False"/>
+                                <if expression="entradaUm + 2 != entradaDois and entradaUm + 1 != entradaDois">
+                                    <then>
+                                        <output expression="&quot; + &quot;" newline="False"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot; = &quot;" newline="False"/>
+                                    </else>
+                                </if>
+                                <assign variable="total" expression="total + entradaUm"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="total" newline="False"/>
+                </then>
+                <else>
+                    <output expression="&quot;Valores incorretos.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
