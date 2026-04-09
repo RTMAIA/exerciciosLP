@@ -4,9 +4,9 @@
         <attribute name="name" value="exercici"/>
         <attribute name="authors" value="Rafael"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-03-07 02:42:12 "/>
+        <attribute name="saved" value="2026-03-28 11:11:49 "/>
         <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIxMTozMjo0MyAiOzIyMDM="/>
-        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTA3OyIwMjo0MjoxMiAiOzM7MjMxMA=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTI4OyIxMToxMTo0OSAiOzU7MjMyMQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -35,16 +35,10 @@
             <assign variable="hora" expression="&quot;&quot;"/>
             <assign variable="minutos" expression="&quot;&quot;"/>
             <for variable="i" start="0" end="tamanho-1" direction="inc" step="1">
-                <if expression="Char(letra, i)!= pontoDeCorte">
+                <if expression="Char(letra, i)== pontoDeCorte">
                     <then>
-                        <if expression="Char(letra, i)== &quot;1&quot; || Char(letra, i) == &quot;3&quot;">
-                            <then>
-                                <assign variable="hora" expression="hora &amp; Char(letra, i)"/>
-                            </then>
-                            <else>
-                                <assign variable="minutos" expression="minutos &amp; Char(letra, i)"/>
-                            </else>
-                        </if>
+                        <assign variable="hora" expression="hora &amp; Char(letra, i-2) &amp; Char(letra,i-1)"/>
+                        <assign variable="minutos" expression="minutos &amp; Char(letra, i+1) &amp; Char(letra, i+2)"/>
                     </then>
                     <else/>
                 </if>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Solucao_02_fluxograma"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-09 03:56:48 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjA5OjM5OjMxICI7MjA2Mw=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjA5OjQwOjE0ICI7MTtBbHVubztMQUItMDE7MjAyNi0wNC0wOTsiMDk6MzE6MzkgIjs0Mjg2"/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjA5OjQ0OjE1ICI7MjsyMTcw"/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTA0LTA5OyIwMzo1Njo0OCAiOzE7MjMyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="limiteSuperior, saida" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um limite: &quot;" newline="True"/>
+            <input variable="limiteSuperior"/>
+            <output expression="&quot;Saida: &quot;" newline="False"/>
+            <for variable="saida" start="0" end="limiteSuperior" direction="inc" step="1">
+                <if expression="saida % 2 == 1">
+                    <then>
+                        <if expression="saida &lt; 15">
+                            <then>
+                                <output expression="saida &amp; &quot;  &quot;" newline="False"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

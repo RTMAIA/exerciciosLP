@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Solucao_01_fluxograma"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-09 03:57:33 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjA5OjMxOjM5ICI7MjA2Mw=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjA5OjM4OjQyICI7MTsyMTcy"/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTA0LTA5OyIwMzo1NzozMyAiOzE7MjMyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="limiteSuperior, incremento, saida" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um limite: &quot;" newline="True"/>
+            <input variable="limiteSuperior"/>
+            <output expression="&quot;Digite um valor de incremento: &quot;" newline="True"/>
+            <input variable="incremento"/>
+            <output expression="&quot;Saida: &quot;" newline="False"/>
+            <for variable="saida" start="0" end="limiteSuperior" direction="inc" step="incremento">
+                <output expression="saida &amp; &quot;  &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

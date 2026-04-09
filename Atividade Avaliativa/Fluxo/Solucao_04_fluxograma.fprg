@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Solucao_04_fluxograma"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-09 04:23:31 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjEwOjA4OjE1ICI7MjA1Mw=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjEwOjQ2OjQzICI7MjsyMTY1"/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTA0LTA5OyIwNDoyMzozMSAiOzE7MjMxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, entrada, i, soma, maior, menor" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um numero de entradas: &quot;" newline="True"/>
+            <input variable="entrada"/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="maior" expression="0"/>
+            <assign variable="menor" expression="0"/>
+            <for variable="i" start="1" end="entrada" direction="inc" step="1">
+                <output expression="&quot;Digite o valor: &quot;" newline="True"/>
+                <input variable="num"/>
+                <if expression="num &gt;= 0">
+                    <then>
+                        <assign variable="soma" expression="soma + num"/>
+                        <if expression="maior == 0 and menor == 0">
+                            <then>
+                                <assign variable="maior" expression="num"/>
+                                <assign variable="menor" expression="num"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="num &gt; maior">
+                            <then>
+                                <assign variable="maior" expression="num"/>
+                                <if expression="maior &lt; menor">
+                                    <then>
+                                        <assign variable="menor" expression="maior"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Valor invalido. Digite um valor maior que 0&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Maior numero: &quot; &amp; maior" newline="True"/>
+            <output expression="&quot;Menor numero: &quot; &amp; menor" newline="True"/>
+            <assign variable="media" expression="soma / entrada"/>
+            <output expression="&quot;Valor m&#233;dio: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

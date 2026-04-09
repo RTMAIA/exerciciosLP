@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci"/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-09 04:31:38 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTDsyMDI2LTAzLTI3OyIwMzowNzoxMyAiOzIyMDU="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxOzIwMjYtMDQtMDk7IjEyOjMxOjUxICI7MTsyMTU5"/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTDsyMDI2LTA0LTA5OyIwNDozMTozOCAiOzM7MjMyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, termoUm, termoDois, valores" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero do primeiro termo: &quot;" newline="True"/>
+            <input variable="termoUm"/>
+            <output expression="&quot;Digite o n&#250;mero do primeiro termo: &quot;" newline="True"/>
+            <input variable="termoDois"/>
+            <output expression="&quot;Saida: &quot; &amp; termoUm &amp; &quot;    &quot; &amp; termoDois &amp; &quot;    &quot;" newline="False"/>
+            <for variable="i" start="1" end="8" direction="inc" step="1">
+                <if expression="i % 2 == 1">
+                    <then>
+                        <assign variable="termoUm" expression="termoDois + termoUm"/>
+                        <assign variable="termoDois" expression="termoUm - termoDois"/>
+                        <output expression="termoUm &amp; &quot;    &quot;" newline="False"/>
+                        <output expression="termoDois &amp; &quot;    &quot;" newline="False"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
