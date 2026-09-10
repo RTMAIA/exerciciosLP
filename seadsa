@@ -1,0 +1,17 @@
+1.O que é um requisito?
+   — É uma funcionalidade que o sistema deve realizar
+2.Quais são algumas características de requisitos bem escritos?
+   — Não ser ambíguo, verificável.
+3.O que é gerenciamento de requisitos?
+    — É uma abordagem sistemática para encontrar, elicitar, organizar, documentar e gerenciar requisitos.
+4.Que fatores contribuem para o sucesso do projeto?
+    — Capacidade de entender a necessidade do cliente e abstrair essas necessidades em requisitos bem definidos e documentados.
+5.Especifique requisitos funcionais (RF) do APP de sua equipe!
+— Gerar relatórios de venda
+— Integração com o sistema de caixa
+— Exportação em formato PDF
+— Filtros de data
+— Filtros de produto
+— Geração de gráficos de venda por período
+
+Ao menos 6 requisitos funcionais
